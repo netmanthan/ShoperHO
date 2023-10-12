@@ -1,15 +1,15 @@
 {
-  "name": "shoper",
-  "description": "Open Source ERP System powered by the ShoperPrime Framework",
+  "name": "shoperho",
+  "description": "ShoperPrime Retail ERP System powered by the ShoperPrime Frameworks",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netmanthan/Shoper.git"
+    "url": "git+https://github.com/netmanthan/shoperho.git"
   },
   "homepage": "https://shopersolutions.com",
-  "author": "ShoperPrime Solutions",
+  "author": "Frappe Technologies Pvt. Ltd.",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/netmanthan/Shoper/issues"
+    "url": "https://github.com/netmanthan/shoperho/issues"
   },
   "devDependencies": {},
   "dependencies": {
