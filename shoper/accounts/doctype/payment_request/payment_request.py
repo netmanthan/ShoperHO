@@ -20,7 +20,7 @@ from shoper.accounts.doctype.payment_entry.payment_entry import (
 from shoper.accounts.doctype.subscription_plan.subscription_plan import get_plan_rate
 from shoper.accounts.party import get_party_account, get_party_bank_account
 from shoper.accounts.utils import get_account_currency
-from shoper.shoperprimeho_integrations.stripe_integration import create_stripe_subscription
+from shoper.shoper_integrations.stripe_integration import create_stripe_subscription
 from shoper.utilities import payment_app_import_guard
 
 

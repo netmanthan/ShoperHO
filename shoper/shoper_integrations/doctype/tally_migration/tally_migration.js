@@ -73,11 +73,11 @@ frappe.ui.form.on("Tally Migration", {
 		}
 	},
 
-	shoperprimeho_company: function (frm) {
-		frappe.db.exists("Company", frm.doc.shoperprimeho_company).then(exists => {
+	shoper_company: function (frm) {
+		frappe.db.exists("Company", frm.doc.shoper_company).then(exists => {
 			if (exists) {
 				frappe.msgprint(
-					__("Company {0} already exists. Continuing will overwrite the Company and Chart of Accounts", [frm.doc.shoperprimeho_company]),
+					__("Company {0} already exists. Continuing will overwrite the Company and Chart of Accounts", [frm.doc.shoper_company]),
 				);
 			}
 		});
@@ -258,7 +258,7 @@ shoper.tally_migration.create_new_doc = (document) => {
 	shoper.tally_migration.resolve(document);
 	return frappe.call({
 		type: "POST",
-		method: 'shoper.shoperprimeho_integrations.doctype.tally_migration.tally_migration.new_doc',
+		method: 'shoper.shoper_integrations.doctype.tally_migration.tally_migration.new_doc',
 		args: {
 			document
 		},

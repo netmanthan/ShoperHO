@@ -10,11 +10,11 @@ from frappe.integrations.utils import create_request_log
 from frappe.model.document import Document
 from frappe.utils import call_hook_method, fmt_money, get_request_site_address
 
-from shoper.shoperprimeho_integrations.doctype.mpesa_settings.mpesa_connector import MpesaConnector
-from shoper.shoperprimeho_integrations.doctype.mpesa_settings.mpesa_custom_fields import (
+from shoper.shoper_integrations.doctype.mpesa_settings.mpesa_connector import MpesaConnector
+from shoper.shoper_integrations.doctype.mpesa_settings.mpesa_custom_fields import (
 	create_custom_pos_fields,
 )
-from shoper.shoperprimeho_integrations.utils import create_mode_of_payment
+from shoper.shoper_integrations.utils import create_mode_of_payment
 from shoper.utilities import payment_app_import_guard
 
 
@@ -54,7 +54,7 @@ class MpesaSettings(Document):
 		for i, amount in enumerate(request_amounts):
 			args.request_amount = amount
 			if frappe.flags.in_test:
-				from shoper.shoperprimeho_integrations.doctype.mpesa_settings.test_mpesa_settings import (
+				from shoper.shoper_integrations.doctype.mpesa_settings.test_mpesa_settings import (
 					get_payment_request_response_payload,
 				)
 
@@ -91,7 +91,7 @@ class MpesaSettings(Document):
 		)
 
 		if frappe.flags.in_test:
-			from shoper.shoperprimeho_integrations.doctype.mpesa_settings.test_mpesa_settings import (
+			from shoper.shoper_integrations.doctype.mpesa_settings.test_mpesa_settings import (
 				get_test_account_balance_response,
 			)
 
@@ -125,7 +125,7 @@ def generate_stk_push(**kwargs):
 	try:
 		callback_url = (
 			get_request_site_address(True)
-			+ "/api/method/shoper.shoperprimeho_integrations.doctype.mpesa_settings.mpesa_settings.verify_transaction"
+			+ "/api/method/shoper.shoper_integrations.doctype.mpesa_settings.mpesa_settings.verify_transaction"
 		)
 
 		mpesa_settings = frappe.get_doc("Mpesa Settings", args.payment_gateway[6:])
@@ -265,7 +265,7 @@ def get_account_balance(request_payload):
 
 		callback_url = (
 			get_request_site_address(True)
-			+ "/api/method/shoper.shoperprimeho_integrations.doctype.mpesa_settings.mpesa_settings.process_balance_info"
+			+ "/api/method/shoper.shoper_integrations.doctype.mpesa_settings.mpesa_settings.process_balance_info"
 		)
 
 		response = connector.get_balance(

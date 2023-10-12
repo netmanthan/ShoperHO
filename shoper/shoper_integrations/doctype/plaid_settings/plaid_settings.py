@@ -11,7 +11,7 @@ from frappe.utils import add_months, formatdate, getdate, today
 from plaid.errors import ItemError
 
 from shoper.accounts.doctype.journal_entry.journal_entry import get_default_bank_cash_account
-from shoper.shoperprimeho_integrations.doctype.plaid_settings.plaid_connector import PlaidConnector
+from shoper.shoper_integrations.doctype.plaid_settings.plaid_connector import PlaidConnector
 
 
 class PlaidSettings(Document):
@@ -298,7 +298,7 @@ def enqueue_synchronization():
 
 	for plaid_account in plaid_accounts:
 		frappe.enqueue(
-			"shoper.shoperprimeho_integrations.doctype.plaid_settings.plaid_settings.sync_transactions",
+			"shoper.shoper_integrations.doctype.plaid_settings.plaid_settings.sync_transactions",
 			bank=plaid_account.bank,
 			bank_account=plaid_account.name,
 		)

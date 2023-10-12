@@ -26,7 +26,7 @@
   "date_of_joining",
   "image",
   "status",
-  "shoperprimeho_user",
+  "shoper_user",
   "user_id",
   "create_user",
   "create_user_permission",
@@ -275,7 +275,7 @@
   },
   {
    "collapsible": 1,
-   "fieldname": "shoperprimeho_user",
+   "fieldname": "shoper_user",
    "fieldtype": "Section Break",
    "label": "User Details"
   },

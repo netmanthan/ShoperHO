@@ -10,7 +10,7 @@ from frappe.custom.doctype.custom_field.custom_field import create_custom_fields
 from frappe.model.document import Document
 from frappe.permissions import add_permission, update_permission_property
 
-from shoper.shoperprimeho_integrations.taxjar_integration import get_client
+from shoper.shoper_integrations.taxjar_integration import get_client
 
 
 class TaxJarSettings(Document):

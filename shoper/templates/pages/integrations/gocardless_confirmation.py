@@ -4,7 +4,7 @@
 import frappe
 from frappe import _
 
-from shoper.shoperprimeho_integrations.doctype.gocardless_settings.gocardless_settings import (
+from shoper.shoper_integrations.doctype.gocardless_settings.gocardless_settings import (
 	get_gateway_controller,
 	gocardless_initialization,
 )
@@ -88,7 +88,7 @@ def create_mandate(data):
 			["reference_doctype", "reference_name"],
 			as_dict=1,
 		)
-		shoperprimeho_customer = frappe.db.get_value(
+		shoper_customer = frappe.db.get_value(
 			reference_doc.reference_doctype, reference_doc.reference_name, ["customer_name"], as_dict=1
 		)
 
@@ -97,7 +97,7 @@ def create_mandate(data):
 				{
 					"doctype": "GoCardless Mandate",
 					"mandate": mandate,
-					"customer": shoperprimeho_customer.customer_name,
+					"customer": shoper_customer.customer_name,
 					"gocardless_customer": data.get("customer"),
 				}
 			).insert(ignore_permissions=True)

@@ -225,8 +225,8 @@ shoper.patches.v13_0.remove_bad_selling_defaults
 shoper.patches.v13_0.trim_whitespace_from_serial_nos  # 16-01-2022
 shoper.patches.v13_0.migrate_stripe_api
 shoper.patches.v13_0.reset_clearance_date_for_intracompany_payment_entries
-execute:frappe.reload_doc("shoperprimeho_integrations", "doctype", "TaxJar Settings")
-execute:frappe.reload_doc("shoperprimeho_integrations", "doctype", "Product Tax Category")
+execute:frappe.reload_doc("shoper_integrations", "doctype", "TaxJar Settings")
+execute:frappe.reload_doc("shoper_integrations", "doctype", "Product Tax Category")
 shoper.patches.v13_0.custom_fields_for_taxjar_integration          #08-11-2021
 shoper.patches.v13_0.set_operation_time_based_on_operating_cost
 shoper.patches.v13_0.create_gst_payment_entry_fields #27-11-2021

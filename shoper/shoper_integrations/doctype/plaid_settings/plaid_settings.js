@@ -22,7 +22,7 @@ frappe.ui.form.on('Plaid Settings', {
 
 			frm.add_custom_button(__("Sync Now"), () => {
 				frappe.call({
-					method: "shoper.shoperprimeho_integrations.doctype.plaid_settings.plaid_settings.enqueue_synchronization",
+					method: "shoper.shoper_integrations.doctype.plaid_settings.plaid_settings.enqueue_synchronization",
 					freeze: true,
 					callback: () => {
 						let bank_transaction_link = '<a href="#List/Bank Transaction">Bank Transaction</a>';
@@ -121,11 +121,11 @@ shoper.integrations.plaidLink = class plaidLink {
 			reqd: 1
 		}, (data) => {
 			me.company = data.company;
-			frappe.xcall('shoper.shoperprimeho_integrations.doctype.plaid_settings.plaid_settings.add_institution', {
+			frappe.xcall('shoper.shoper_integrations.doctype.plaid_settings.plaid_settings.add_institution', {
 				token: token,
 				response: response
 			}).then((result) => {
-				frappe.xcall('shoper.shoperprimeho_integrations.doctype.plaid_settings.plaid_settings.add_bank_accounts', {
+				frappe.xcall('shoper.shoper_integrations.doctype.plaid_settings.plaid_settings.add_bank_accounts', {
 					response: response,
 					bank: result,
 					company: me.company

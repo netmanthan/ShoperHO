@@ -1,9 +1,9 @@
 import frappe
 import requests
 
-# api/method/shoper.shoperprimeho_integrations.exotel_integration.handle_incoming_call
-# api/method/shoper.shoperprimeho_integrations.exotel_integration.handle_end_call
-# api/method/shoper.shoperprimeho_integrations.exotel_integration.handle_missed_call
+# api/method/shoper.shoper_integrations.exotel_integration.handle_incoming_call
+# api/method/shoper.shoper_integrations.exotel_integration.handle_end_call
+# api/method/shoper.shoper_integrations.exotel_integration.handle_missed_call
 
 
 @frappe.whitelist(allow_guest=True)

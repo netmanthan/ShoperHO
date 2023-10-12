@@ -3,7 +3,7 @@ import frappe
 
 def execute():
 	install_apps = frappe.get_installed_apps()
-	if "shoperprimeho_datev_uo" in install_apps or "shoperprimeho_datev" in install_apps:
+	if "shoper_datev_uo" in install_apps or "shoper_datev" in install_apps:
 		return
 
 	# doctypes

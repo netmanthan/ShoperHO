@@ -9,10 +9,10 @@ from frappe.www.printview import get_html_and_style
 class TestFormLoads(FrappeTestCase):
 	@change_settings("Print Settings", {"allow_print_for_cancelled": 1})
 	def test_load(self):
-		shoperprimeho_modules = frappe.get_all("Module Def", filters={"app_name": "shoper"}, pluck="name")
+		shoper_modules = frappe.get_all("Module Def", filters={"app_name": "shoper"}, pluck="name")
 		doctypes = frappe.get_all(
 			"DocType",
-			{"istable": 0, "issingle": 0, "is_virtual": 0, "module": ("in", shoperprimeho_modules)},
+			{"istable": 0, "issingle": 0, "is_virtual": 0, "module": ("in", shoper_modules)},
 			pluck="name",
 		)
 

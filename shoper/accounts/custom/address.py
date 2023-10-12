@@ -7,18 +7,18 @@ from frappe.contacts.doctype.address.address import (
 )
 
 
-class ShoperPrimeHOAddress(Address):
+class ShoperAddress(Address):
 	def validate(self):
 		self.validate_reference()
 		self.update_compnay_address()
-		super(ShoperPrimeHOAddress, self).validate()
+		super(ShoperAddress, self).validate()
 
 	def link_address(self):
 		"""Link address based on owner"""
 		if self.is_your_company_address:
 			return
 
-		return super(ShoperPrimeHOAddress, self).link_address()
+		return super(ShoperAddress, self).link_address()
 
 	def update_compnay_address(self):
 		for link in self.get("links"):

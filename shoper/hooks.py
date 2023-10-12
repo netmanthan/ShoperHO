@@ -18,7 +18,7 @@ app_include_js = "shoper.bundle.js"
 app_include_css = "shoper.bundle.css"
 web_include_js = "shoper-web.bundle.js"
 web_include_css = "shoper-web.bundle.css"
-email_css = "email_shoperprimeho.bundle.css"
+email_css = "email_shoper.bundle.css"
 
 doctype_js = {
 	"Address": "public/js/address.js",
@@ -28,7 +28,7 @@ doctype_js = {
 	"Contact": "public/js/contact.js",
 }
 
-override_doctype_class = {"Address": "shoper.accounts.custom.address.ShoperPrimeHOAddress"}
+override_doctype_class = {"Address": "shoper.accounts.custom.address.ShoperAddress"}
 
 welcome_email = "shoper.setup.utils.welcome_email"
 
@@ -336,11 +336,11 @@ doc_events = {
 			"shoper.regional.create_transaction_log",
 			"shoper.regional.italy.utils.sales_invoice_on_submit",
 			"shoper.regional.saudi_arabia.utils.create_qr_code",
-			"shoper.shoperprimeho_integrations.taxjar_integration.create_transaction",
+			"shoper.shoper_integrations.taxjar_integration.create_transaction",
 		],
 		"on_cancel": [
 			"shoper.regional.italy.utils.sales_invoice_on_cancel",
-			"shoper.shoperprimeho_integrations.taxjar_integration.delete_transaction",
+			"shoper.shoper_integrations.taxjar_integration.delete_transaction",
 			"shoper.regional.saudi_arabia.utils.delete_qr_code_file",
 		],
 		"on_trash": "shoper.regional.check_deletion_permission",
@@ -374,7 +374,7 @@ doc_events = {
 		"after_insert": "shoper.crm.doctype.email_campaign.email_campaign.unsubscribe_recipient"
 	},
 	("Quotation", "Sales Order", "Sales Invoice"): {
-		"validate": ["shoper.shoperprimeho_integrations.taxjar_integration.set_sales_tax"]
+		"validate": ["shoper.shoper_integrations.taxjar_integration.set_sales_tax"]
 	},
 	"Company": {"on_trash": ["shoper.regional.saudi_arabia.utils.delete_vat_settings_for_company"]},
 	"Integration Request": {
@@ -416,7 +416,7 @@ scheduler_events = {
 		"shoper.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts",
 	],
 	"hourly": [
-		"shoper.shoperprimeho_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization",
+		"shoper.shoper_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization",
 		"shoper.projects.doctype.project.project.project_status_update_reminder",
 		"shoper.projects.doctype.project.project.hourly_reminder",
 		"shoper.projects.doctype.project.project.collect_project_status",

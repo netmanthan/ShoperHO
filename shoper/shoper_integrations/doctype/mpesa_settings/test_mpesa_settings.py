@@ -7,11 +7,11 @@ from json import dumps
 import frappe
 
 from shoper.accounts.doctype.pos_invoice.test_pos_invoice import create_pos_invoice
-from shoper.shoperprimeho_integrations.doctype.mpesa_settings.mpesa_settings import (
+from shoper.shoper_integrations.doctype.mpesa_settings.mpesa_settings import (
 	process_balance_info,
 	verify_transaction,
 )
-from shoper.shoperprimeho_integrations.utils import create_mode_of_payment
+from shoper.shoper_integrations.utils import create_mode_of_payment
 
 
 class TestMpesaSettings(unittest.TestCase):

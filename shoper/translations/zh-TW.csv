@@ -22,7 +22,7 @@ DocType: Department,Leave Approvers,休假審批人
 DocType: Employee,Bio / Cover Letter,生物/求職信
 DocType: Patient Encounter,Investigations,調查
 DocType: Restaurant Order Entry,Click Enter To Add,點擊輸入要添加
-apps/shoper/shoper/shoperprimeho_integrations/doctype/shopify_settings/shopify_settings.py +29,"Missing value for Password, API Key or Shopify URL",缺少密碼，API密鑰或Shopify網址的值
+apps/shoper/shoper/shoper_integrations/doctype/shopify_settings/shopify_settings.py +29,"Missing value for Password, API Key or Shopify URL",缺少密碼，API密鑰或Shopify網址的值
 apps/shoper/shoper/public/js/setup_wizard.js +243,All Accounts,所有帳戶
 apps/shoper/shoper/hr/doctype/employee_transfer/employee_transfer.py +15,Cannot transfer Employee with status Left,無法轉移狀態為左的員工
 apps/shoper/shoper/manufacturing/doctype/production_order/production_order.py +216,"Stopped Production Order cannot be cancelled, Unstop it first to cancel",停止生產訂單無法取消，首先Unstop它取消
@@ -452,7 +452,7 @@ DocType: Inpatient Record,Admitted Datetime,承認日期時間
 DocType: Work Order,Backflush raw materials from work-in-progress warehouse,從在製品庫中反沖原料
 apps/shoper/shoper/stock/report/item_variant_details/item_variant_details.py +79,Open Orders,開放訂單
 apps/shoper/shoper/healthcare/setup.py +187,Low Sensitivity,低靈敏度
-apps/shoper/shoper/shoperprimeho_integrations/doctype/shopify_log/shopify_log.js +16,Order rescheduled for sync,訂單重新安排同步
+apps/shoper/shoper/shoper_integrations/doctype/shopify_log/shopify_log.js +16,Order rescheduled for sync,訂單重新安排同步
 apps/shoper/shoper/templates/emails/training_event.html +17,Please confirm once you have completed your training,完成培訓後請確認
 DocType: Lead,Suggestions,建議
 DocType: Territory,Set Item Group-wise budgets on this Territory. You can also include seasonality by setting the Distribution.,在此地域設定跨群組項目間的預算。您還可以通過設定分配來包含季節性。
@@ -569,7 +569,7 @@ apps/shoper/shoper/education/doctype/student_report_generation_tool/student_repo
 DocType: POS Closing Voucher Details,Difference,區別
 DocType: Delivery Settings,Delay between Delivery Stops,交貨停止之間的延遲
 apps/shoper/shoper/selling/doctype/installation_note/installation_note.py +59,Serial No {0} does not belong to Delivery Note {1},序列號{0}不屬於送貨單{1}
-apps/shoper/shoper/shoperprimeho_integrations/doctype/gocardless_settings/gocardless_settings.py +97,"There seems to be an issue with the server's GoCardless configuration. Don't worry, in case of failure, the amount will get refunded to your account.",服務器的GoCardless配置似乎存在問題。別擔心，如果失敗，這筆款項將退還給您的帳戶。
+apps/shoper/shoper/shoper_integrations/doctype/gocardless_settings/gocardless_settings.py +97,"There seems to be an issue with the server's GoCardless configuration. Don't worry, in case of failure, the amount will get refunded to your account.",服務器的GoCardless配置似乎存在問題。別擔心，如果失敗，這筆款項將退還給您的帳戶。
 apps/shoper/shoper/public/js/utils/item_selector.js +20,Add Items,添加項目
 DocType: Item Quality Inspection Parameter,Item Quality Inspection Parameter,產品質量檢驗參數
 DocType: Leave Application,Leave Approver Name,離開批准人姓名
@@ -1060,7 +1060,7 @@ apps/shoper/shoper/stock/doctype/item/item.py +302,Please select Sample Retentio
 apps/shoper/shoper/accounts/doctype/loyalty_program/loyalty_program.js +62,Please select the Multiple Tier Program type for more than one collection rules.,請為多個收集規則選擇多層程序類型。
 DocType: Payment Entry,Received Amount (Company Currency),收到的款項（公司幣種）
 apps/shoper/shoper/crm/doctype/opportunity/opportunity.py +192,Lead must be set if Opportunity is made from Lead,如果機會是由前導而來，前導必須被設定
-apps/shoper/shoper/shoperprimeho_integrations/doctype/gocardless_settings/gocardless_settings.py +136,Payment Cancelled. Please check your GoCardless Account for more details,付款已取消。請檢查您的GoCardless帳戶以了解更多詳情
+apps/shoper/shoper/shoper_integrations/doctype/gocardless_settings/gocardless_settings.py +136,Payment Cancelled. Please check your GoCardless Account for more details,付款已取消。請檢查您的GoCardless帳戶以了解更多詳情
 DocType: Delivery Settings,Send with Attachment,發送附件
 apps/shoper/shoper/hr/doctype/holiday_list/holiday_list.py +30,Please select weekly off day,請選擇每週休息日
 DocType: Inpatient Record,O Negative,O負面
@@ -1501,7 +1501,7 @@ DocType: Department,The first Leave Approver in the list will be set as the defa
 apps/shoper/shoper/stock/doctype/item/item.py +774,Attribute table is mandatory,屬性表是強制性的
 DocType: Production Plan,Get Sales Orders,獲取銷售訂單
 apps/shoper/shoper/accounts/doctype/pricing_rule/pricing_rule.py +69,{0} can not be negative,{0}不能為負數
-apps/shoper/shoper/shoperprimeho_integrations/doctype/quickbooks_migrator/quickbooks_migrator.js +37,Connect to Quickbooks,連接到Quickbooks
+apps/shoper/shoper/shoper_integrations/doctype/quickbooks_migrator/quickbooks_migrator.js +37,Connect to Quickbooks,連接到Quickbooks
 DocType: Training Event,Self-Study,自習
 DocType: POS Closing Voucher,Period End Date,期末結束日期
 apps/shoper/shoper/accounts/doctype/opening_invoice_creation_tool/opening_invoice_creation_tool.py +64,Row {0}: {1} is required to create the Opening {2} Invoices,行{0}：{1}是創建開始{2}發票所必需的
@@ -1647,7 +1647,7 @@ DocType: Sales Invoice Advance,Sales Invoice Advance,銷售發票提前
 apps/shoper/shoper/manufacturing/doctype/production_planning_tool/production_planning_tool.py +552,Nothing to request,無需求
 DocType: Stock Settings,Default Return Warehouse,默認退貨倉庫
 apps/shoper/shoper/public/js/setup_wizard.js +18,Select your Domains,選擇您的域名
-apps/shoper/shoper/shoperprimeho_integrations/doctype/shopify_settings/sync_product.py +228,Shopify Supplier,Shopify供應商
+apps/shoper/shoper/shoper_integrations/doctype/shopify_settings/sync_product.py +228,Shopify Supplier,Shopify供應商
 DocType: Bank Statement Transaction Entry,Payment Invoice Items,付款發票項目
 DocType: Payroll Entry,Employee Details,員工詳細信息
 DocType: Item Variant Settings,Fields will be copied over only at time of creation.,字段將僅在創建時復制。
@@ -1943,7 +1943,7 @@ DocType: Asset,Purchase Receipt Amount,採購收據金額
 DocType: Employee Separation,Exit Interview Summary,退出面試摘要
 apps/shoper/shoper/public/js/utils/serial_no_batch_selector.js +140,Please select batches for batched item ,請為批量選擇批次
 DocType: Asset,Depreciation Schedules,折舊計劃
-apps/shoper/shoper/shoperprimeho_integrations/doctype/shopify_settings/shopify_settings.py +37,"Support for public app is deprecated. Please setup private app, for more details refer user manual",對公共應用程序的支持已被棄用。請設置私人應用程序，更多詳細信息請參閱用戶手冊
+apps/shoper/shoper/shoper_integrations/doctype/shopify_settings/shopify_settings.py +37,"Support for public app is deprecated. Please setup private app, for more details refer user manual",對公共應用程序的支持已被棄用。請設置私人應用程序，更多詳細信息請參閱用戶手冊
 apps/shoper/shoper/regional/report/gstr_1/gstr_1.py +202,Following accounts might be selected in GST Settings:,以下帳戶可能在GST設置中選擇：
 apps/shoper/shoper/hr/doctype/leave_application/leave_application.py +104,Application period cannot be outside leave allocation period,申請期間不能請假外分配週期
 DocType: Activity Cost,Projects,專案
@@ -2143,7 +2143,7 @@ apps/shoper/shoper/selling/report/sales_person_commission_summary/sales_person_c
 DocType: Purchase Invoice,Shipping Address,送貨地址
 DocType: Stock Reconciliation,This tool helps you to update or fix the quantity and valuation of stock in the system. It is typically used to synchronise the system values and what actually exists in your warehouses.,此工具可幫助您更新或修復系統中的庫存數量和價值。它通常被用於同步系統值和實際存在於您的倉庫。
 DocType: Delivery Note,In Words will be visible once you save the Delivery Note.,送貨單一被儲存，就會顯示出來。
-apps/shoper/shoper/shoperprimeho_integrations/utils.py +22,Unverified Webhook Data,未經驗證的Webhook數據
+apps/shoper/shoper/shoper_integrations/utils.py +22,Unverified Webhook Data,未經驗證的Webhook數據
 apps/shoper/shoper/education/utils.py +50,Student {0} - {1} appears Multiple times in row {2} & {3},學生{0}  -  {1}出現連續中多次{2}和{3}
 DocType: Item Alternative,Two-way,雙向
 DocType: Project,Day to Send,發送日
@@ -2248,7 +2248,7 @@ DocType: Customer,Customer POS Id,客戶POS ID
 DocType: Account,Account Name,帳戶名稱
 apps/shoper/shoper/hr/doctype/salary_structure/salary_structure.js +536,From Date cannot be greater than To Date,起始日期不能大於結束日期
 apps/shoper/shoper/stock/doctype/serial_no/serial_no.py +203,Serial No {0} quantity {1} cannot be a fraction,序列號{0}的數量量{1}不能是分數
-apps/shoper/shoper/shoperprimeho_integrations/doctype/woocommerce_settings/woocommerce_settings.py +96,Please enter Woocommerce Server URL,請輸入Woocommerce服務器網址
+apps/shoper/shoper/shoper_integrations/doctype/woocommerce_settings/woocommerce_settings.py +96,Please enter Woocommerce Server URL,請輸入Woocommerce服務器網址
 DocType: Purchase Order Item,Supplier Part Number,供應商零件編號
 apps/shoper/shoper/accounts/doctype/purchase_invoice/purchase_invoice.py +137,Conversion rate cannot be 0 or 1,轉化率不能為0或1
 apps/shoper/shoper/hr/doctype/employee_onboarding/employee_onboarding.py +27,All the mandatory Task for employee creation hasn't been done yet.,所有員工創建的強制性任務尚未完成。
@@ -2508,7 +2508,7 @@ DocType: Taxable Salary Slab,From Amount,從金額
 apps/shoper/shoper/selling/doctype/installation_note/installation_note.py +44,Item {0} is not a serialized Item,項{0}不是一個序列化的項目
 DocType: Leave Type,Encashment,兌現
 DocType: Delivery Settings,Delivery Settings,交貨設置
-apps/shoper/shoper/shoperprimeho_integrations/doctype/quickbooks_migrator/quickbooks_migrator.js +50,Fetch Data,獲取數據
+apps/shoper/shoper/shoper_integrations/doctype/quickbooks_migrator/quickbooks_migrator.js +50,Fetch Data,獲取數據
 apps/shoper/shoper/hr/doctype/leave_policy/leave_policy.py +16,Maximum leave allowed in the leave type {0} is {1},假期類型{0}允許的最大休假是{1}
 DocType: SMS Center,Create Receiver List,創建接收器列表
 apps/shoper/shoper/assets/doctype/asset/asset.py +98,Available-for-use Date should be after purchase date,可供使用的日期應在購買日期之後
@@ -2692,7 +2692,7 @@ DocType: Shopify Webhook Detail,Shopify Webhook Detail,Shopify Webhook詳細信�
 apps/shoper/shoper/config/accounts.py +479,Goods and Services Tax (GST India),商品和服務稅（印度消費稅）
 DocType: Delivery Note,Excise Page Number,消費頁碼
 DocType: Asset,Purchase Date,購買日期
-apps/shoper/shoper/shoperprimeho_integrations/doctype/woocommerce_settings/woocommerce_settings.js +33,Could not generate Secret,無法生成秘密
+apps/shoper/shoper/shoper_integrations/doctype/woocommerce_settings/woocommerce_settings.js +33,Could not generate Secret,無法生成秘密
 DocType: Volunteer,Volunteer Type,志願者類型
 DocType: Shift Assignment,Shift Type,班次類型
 DocType: Student,Personal Details,個人資料
@@ -4187,7 +4187,7 @@ apps/shoper/shoper/config/projects.py +56,Cost of various activities,各種活�
 apps/shoper/shoper/maintenance/doctype/maintenance_schedule/maintenance_schedule.py +60,"Setting Events to {0}, since the Employee attached to the below Sales Persons does not have a User ID{1}",設置活動為{0}，因為附連到下面的銷售者的僱員不具有用戶ID {1}
 DocType: Timesheet,Billing Details,結算明細
 apps/shoper/shoper/stock/dashboard/item_dashboard.js +163,Source and target warehouse must be different,源和目標倉庫必須是不同的
-apps/shoper/shoper/shoperprimeho_integrations/doctype/gocardless_settings/gocardless_settings.py +140,Payment Failed. Please check your GoCardless Account for more details,支付失敗。請檢查您的GoCardless帳戶以了解更多詳情
+apps/shoper/shoper/shoper_integrations/doctype/gocardless_settings/gocardless_settings.py +140,Payment Failed. Please check your GoCardless Account for more details,支付失敗。請檢查您的GoCardless帳戶以了解更多詳情
 apps/shoper/shoper/stock/doctype/stock_ledger_entry/stock_ledger_entry.py +101,Not allowed to update stock transactions older than {0},不允許更新比{0}舊的庫存交易
 DocType: BOM,Inspection Required,需要檢驗
 DocType: Purchase Invoice Item,PR Detail,詳細新聞稿
@@ -4228,7 +4228,7 @@ DocType: Item Group,Check this if you want to show in website,勾選本項以顯
 apps/shoper/shoper/accounts/report/general_ledger/general_ledger.py +376,Balance ({0}),餘額（{0}）
 DocType: Loyalty Point Entry,Redeem Against,兌換
 apps/shoper/shoper/config/accounts.py +130,Banking and Payments,銀行和支付
-apps/shoper/shoper/shoperprimeho_integrations/doctype/woocommerce_settings/woocommerce_settings.py +99,Please enter API Consumer Key,請輸入API使用者密鑰
+apps/shoper/shoper/shoper_integrations/doctype/woocommerce_settings/woocommerce_settings.py +99,Please enter API Consumer Key,請輸入API使用者密鑰
 ,Welcome to ShoperPrime,歡迎來到ShoperPrimeHO
 apps/shoper/shoper/config/learn.py +102,Lead to Quotation,主導報價
 apps/shoper/shoper/regional/doctype/gst_settings/gst_settings.py +34,Email Reminders will be sent to all parties with email contacts,電子郵件提醒將通過電子郵件聯繫方式發送給各方
@@ -4707,7 +4707,7 @@ DocType: Plant Analysis Criteria,Maximum Permissible Value,最大允許值
 DocType: Journal Entry Account,Employee Advance,員工晉升
 DocType: Payroll Entry,Payroll Frequency,工資頻率
 DocType: Lab Test Template,Sensitivity,靈敏度
-apps/shoper/shoper/shoperprimeho_integrations/doctype/amazon_mws_settings/amazon_methods.py +132,Sync has been temporarily disabled because maximum retries have been exceeded,暫時禁用了同步，因為已超出最大重試次數
+apps/shoper/shoper/shoper_integrations/doctype/amazon_mws_settings/amazon_methods.py +132,Sync has been temporarily disabled because maximum retries have been exceeded,暫時禁用了同步，因為已超出最大重試次數
 apps/shoper/shoper/buying/doctype/purchase_order/purchase_order.js +1015,Raw Material,原料
 DocType: Leave Application,Follow via Email,透過電子郵件追蹤
 apps/shoper/shoper/accounts/doctype/account/chart_of_accounts/verified/standard_chart_of_accounts.py +56,Plants and Machineries,廠房和機械設備
@@ -5026,7 +5026,7 @@ apps/shoper/shoper/crm/report/prospects_engaged_but_not_converted/prospects_enga
 DocType: Clinical Procedure Item,Clinical Procedure Item,臨床流程項目
 DocType: Sales Team,Contact No.,聯絡電話
 DocType: Bank Reconciliation,Payment Entries,付款項
-apps/shoper/shoper/shoperprimeho_integrations/doctype/shopify_settings/shopify_settings.py +33,Access token or Shopify URL missing,訪問令牌或Shopify網址丟失
+apps/shoper/shoper/shoper_integrations/doctype/shopify_settings/shopify_settings.py +33,Access token or Shopify URL missing,訪問令牌或Shopify網址丟失
 DocType: Location,Latitude,緯度
 DocType: Work Order,Scrap Warehouse,廢料倉庫
 apps/shoper/shoper/accounts/doctype/purchase_invoice/purchase_invoice.py +192,"Warehouse required at Row No {0}, please set default warehouse for the item {1} for the company {2}",在第{0}行，需要倉庫，請為公司{2}的物料{1}設置默認倉庫
@@ -6207,7 +6207,7 @@ DocType: Assessment Result,Total Score,總得分
 DocType: Crop Cycle,ISO 8601 standard,ISO 8601標準
 DocType: Journal Entry,Debit Note,繳費單
 apps/shoper/shoper/accounts/doctype/sales_invoice/sales_invoice.js +1517,You can only redeem max {0} points in this order.,您只能按此順序兌換最多{0}個積分。
-apps/shoper/shoper/shoperprimeho_integrations/doctype/woocommerce_settings/woocommerce_settings.py +102,Please enter API Consumer Secret,請輸入API消費者密碼
+apps/shoper/shoper/shoper_integrations/doctype/woocommerce_settings/woocommerce_settings.py +102,Please enter API Consumer Secret,請輸入API消費者密碼
 DocType: Stock Entry,As per Stock UOM,按庫存計量單位
 apps/shoper/shoper/stock/doctype/batch/batch_list.js +7,Not Expired,沒有過期
 DocType: Student Log,Achievement,成就
@@ -6239,7 +6239,7 @@ apps/shoper/shoper/accounts/report/budget_variance_report/budget_variance_report
 DocType: Student Group Creation Tool,Leave blank if you make students groups per year,如果您每年製作學生團體，請留空
 DocType: Student Group Creation Tool,Leave blank if you make students groups per year,如果您每年製作學生團體，請留空
 DocType: HR Settings,"If checked, Total no. of Working Days will include holidays, and this will reduce the value of Salary Per Day",如果選中，則總數。工作日將包括節假日，這將縮短每天的工資的價值
-apps/shoper/shoper/shoperprimeho_integrations/doctype/woocommerce_settings/woocommerce_settings.js +25,"Apps using current key won't be able to access, are you sure?",使用當前密鑰的應用程序將無法訪問，您確定嗎？
+apps/shoper/shoper/shoper_integrations/doctype/woocommerce_settings/woocommerce_settings.js +25,"Apps using current key won't be able to access, are you sure?",使用當前密鑰的應用程序將無法訪問，您確定嗎？
 DocType: Purchase Invoice,Total Advance,預付款總計
 apps/shoper/shoper/healthcare/doctype/clinical_procedure_template/clinical_procedure_template.js +78,Change Template Code,更改模板代碼
 apps/shoper/shoper/education/doctype/academic_term/academic_term.py +23,The Term End Date cannot be earlier than the Term Start Date. Please correct the dates and try again.,該期限結束日期不能超過期限開始日期。請更正日期，然後再試一次。

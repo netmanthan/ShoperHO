@@ -3,7 +3,7 @@ from frappe.utils import cint
 
 
 def execute():
-	frappe.reload_doc("shoperprimeho_integrations", "doctype", "woocommerce_settings")
+	frappe.reload_doc("shoper_integrations", "doctype", "woocommerce_settings")
 	doc = frappe.get_doc("Woocommerce Settings")
 
 	if cint(doc.enable_sync):

@@ -219,7 +219,7 @@ frappe.help.help_links["Form/PayPal Settings"] = [
 		label: "PayPal Settings",
 		url:
 			docsUrl +
-			"user/manual/en/shoperprimeho_integration/paypal-integration",
+			"user/manual/en/shoper_integration/paypal-integration",
 	},
 ];
 
@@ -228,14 +228,14 @@ frappe.help.help_links["Form/Razorpay Settings"] = [
 		label: "Razorpay Settings",
 		url:
 			docsUrl +
-			"user/manual/en/shoperprimeho_integration/razorpay-integration",
+			"user/manual/en/shoper_integration/razorpay-integration",
 	},
 ];
 
 frappe.help.help_links["Form/Dropbox Settings"] = [
 	{
 		label: "Dropbox Settings",
-		url: docsUrl + "user/manual/en/shoperprimeho_integration/dropbox-backup",
+		url: docsUrl + "user/manual/en/shoper_integration/dropbox-backup",
 	},
 ];
 
@@ -243,7 +243,7 @@ frappe.help.help_links["Form/LDAP Settings"] = [
 	{
 		label: "LDAP Settings",
 		url:
-			docsUrl + "user/manual/en/shoperprimeho_integration/ldap-integration",
+			docsUrl + "user/manual/en/shoper_integration/ldap-integration",
 	},
 ];
 
@@ -252,7 +252,7 @@ frappe.help.help_links["Form/Stripe Settings"] = [
 		label: "Stripe Settings",
 		url:
 			docsUrl +
-			"user/manual/en/shoperprimeho_integration/stripe-integration",
+			"user/manual/en/shoper_integration/stripe-integration",
 	},
 ];
 
