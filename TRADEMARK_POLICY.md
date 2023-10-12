@@ -33,4 +33,4 @@ Please note that it is not the goal of this policy to limit commercial activity 
 
 When in doubt about your use of the ShoperPrime HO name or logo, please contact Frappe Technologies for clarification.
 
-(inspired by ShoperPrimeHO)
+(inspired by Shoper)

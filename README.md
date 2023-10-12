@@ -7,7 +7,7 @@
         <p>ERP made simple</p>
     </p>
 
-[![CI](https://github.com/netmanthan/ShoperPrimeHO/actions/workflows/server-tests.yml/badge.svg?branch=develop)](https://github.com/netmanthan/ShoperPrimeHO/actions/workflows/server-tests.yml)
+[![CI](https://github.com/netmanthan/Shoper/actions/workflows/server-tests.yml/badge.svg?branch=develop)](https://github.com/netmanthan/Shoper/actions/workflows/server-tests.yml)
 [![UI](https://github.com/ShoperPrime HO/ShoperPrime HO_ui_tests/actions/workflows/ui-tests.yml/badge.svg?branch=develop&event=schedule)](https://github.com/ShoperPrime HO/ShoperPrime HO_ui_tests/actions/workflows/ui-tests.yml)
 [![Open Source Helpers](https://www.codetriage.com/frappe/ShoperPrime HO/badges/users.svg)](https://www.codetriage.com/frappe/ShoperPrime HO)
 [![codecov](https://codecov.io/gh/frappe/ShoperPrime HO/branch/develop/graph/badge.svg?token=0TwvyUg3I5)](https://codecov.io/gh/frappe/ShoperPrime HO)
@@ -70,9 +70,9 @@ New passwords will be created for the ShoperPrime HO "Administrator" user, the M
 
 ## Contributing
 
-1. [Issue Guidelines](https://github.com/netmanthan/ShoperPrimeHO/wiki/Issue-Guidelines)
+1. [Issue Guidelines](https://github.com/netmanthan/Shoper/wiki/Issue-Guidelines)
 1. [Report Security Vulnerabilities](https://shopersolutions.com/security)
-1. [Pull Request Requirements](https://github.com/netmanthan/ShoperPrimeHO/wiki/Contribution-Guidelines)
+1. [Pull Request Requirements](https://github.com/netmanthan/Shoper/wiki/Contribution-Guidelines)
 1. [Translations](https://translate.shopersolutions.com)
 
 

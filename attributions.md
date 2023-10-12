@@ -1,4 +1,4 @@
-## ShoperPrimeHO includes these public works
+## Shoper includes these public works
 
 For ShoperPrime Framework, please see attributions.md at https://github.com/netmanthan/shoperframeworks/
 
