@@ -7,11 +7,6 @@
         <p>Retail ERP made simple</p>
     </p>
 
-[![CI](https://github.com/netmanthan/shoperho/actions/workflows/server-tests.yml/badge.svg?branch=develop)](https://github.com/netmanthan/shoperho/actions/workflows/server-tests.yml)
-[![UI](https://github.com/shoperho/shoperho_ui_tests/actions/workflows/ui-tests.yml/badge.svg?branch=develop&event=schedule)](https://github.com/shoperho/shoperho_ui_tests/actions/workflows/ui-tests.yml)
-[![Open Source Helpers](https://www.codetriage.com/frappe/shoperho/badges/users.svg)](https://www.codetriage.com/frappe/shoperho)
-[![codecov](https://codecov.io/gh/frappe/shoperho/branch/develop/graph/badge.svg?token=0TwvyUg3I5)](https://codecov.io/gh/frappe/shoperho)
-[![docker pulls](https://img.shields.io/docker/pulls/frappe/shoperho-worker.svg)](https://hub.docker.com/r/frappe/shoperho-worker)
 
 [https://shopersolutions.com](https://shopersolutions.com)
 
