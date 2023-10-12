@@ -161,7 +161,7 @@ class TestBankTransaction(FrappeTestCase):
 		)
 
 	def test_matching_loan_repayment(self):
-		from shoperprimeho.loan_mgment.doctype.loan.test_loan import create_loan_accounts
+		from shoperprimeho.loan_management.doctype.loan.test_loan import create_loan_accounts
 
 		create_loan_accounts()
 		bank_account = frappe.get_doc(
@@ -401,13 +401,13 @@ def add_vouchers():
 
 
 def create_loan_and_repayment():
-	from shoperprimeho.loan_mgment.doctype.loan.test_loan import (
+	from shoperprimeho.loan_management.doctype.loan.test_loan import (
 		create_loan,
 		create_loan_type,
 		create_repayment_entry,
 		make_loan_disbursement_entry,
 	)
-	from shoperprimeho.loan_mgment.doctype.process_loan_interest_accrual.process_loan_interest_accrual import (
+	from shoperprimeho.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual import (
 		process_loan_interest_accrual_for_term_loans,
 	)
 	from shoperprimeho.setup.doctype.employee.test_employee import make_employee

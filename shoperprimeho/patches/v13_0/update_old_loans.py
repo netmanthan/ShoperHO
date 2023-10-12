@@ -4,10 +4,10 @@ from frappe.model.naming import make_autoname
 from frappe.utils import flt, nowdate
 
 from shoperprimeho.accounts.doctype.account.test_account import create_account
-from shoperprimeho.loan_mgment.doctype.loan_repayment.loan_repayment import (
+from shoperprimeho.loan_management.doctype.loan_repayment.loan_repayment import (
 	get_accrued_interest_entries,
 )
-from shoperprimeho.loan_mgment.doctype.process_loan_interest_accrual.process_loan_interest_accrual import (
+from shoperprimeho.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual import (
 	process_loan_interest_accrual_for_term_loans,
 )
 
@@ -16,13 +16,13 @@ def execute():
 
 	# Create a penalty account for loan types
 
-	frappe.reload_doc("loan_mgment", "doctype", "loan_type")
-	frappe.reload_doc("loan_mgment", "doctype", "loan")
-	frappe.reload_doc("loan_mgment", "doctype", "repayment_schedule")
-	frappe.reload_doc("loan_mgment", "doctype", "process_loan_interest_accrual")
-	frappe.reload_doc("loan_mgment", "doctype", "loan_repayment")
-	frappe.reload_doc("loan_mgment", "doctype", "loan_repayment_detail")
-	frappe.reload_doc("loan_mgment", "doctype", "loan_interest_accrual")
+	frappe.reload_doc("loan_management", "doctype", "loan_type")
+	frappe.reload_doc("loan_management", "doctype", "loan")
+	frappe.reload_doc("loan_management", "doctype", "repayment_schedule")
+	frappe.reload_doc("loan_management", "doctype", "process_loan_interest_accrual")
+	frappe.reload_doc("loan_management", "doctype", "loan_repayment")
+	frappe.reload_doc("loan_management", "doctype", "loan_repayment_detail")
+	frappe.reload_doc("loan_management", "doctype", "loan_interest_accrual")
 	frappe.reload_doc("accounts", "doctype", "gl_entry")
 	frappe.reload_doc("accounts", "doctype", "journal_entry_account")
 

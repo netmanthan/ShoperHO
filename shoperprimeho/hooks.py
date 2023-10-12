@@ -455,14 +455,14 @@ scheduler_events = {
 	"daily_long": [
 		"shoperprimeho.setup.doctype.email_digest.email_digest.send",
 		"shoperprimeho.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms",
-		"shoperprimeho.loan_mgment.doctype.process_loan_security_shortfall.process_loan_security_shortfall.create_process_loan_security_shortfall",
-		"shoperprimeho.loan_mgment.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_term_loans",
+		"shoperprimeho.loan_management.doctype.process_loan_security_shortfall.process_loan_security_shortfall.create_process_loan_security_shortfall",
+		"shoperprimeho.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_term_loans",
 		"shoperprimeho.crm.utils.open_leads_opportunities_based_on_todays_event",
 		"shoperprimeho.assets.doctype.asset.depreciation.post_depreciation_entries",
 	],
 	"monthly_long": [
 		"shoperprimeho.accounts.deferred_revenue.process_deferred_accounting",
-		"shoperprimeho.loan_mgment.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_demand_loans",
+		"shoperprimeho.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_demand_loans",
 	],
 }
 
