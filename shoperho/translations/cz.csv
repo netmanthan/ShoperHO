@@ -2546,7 +2546,8 @@ DocType: Sales Order,Recurring Order,Opakující se objednávky
 DocType: Company,Default Income Account,Účet Default příjmů
 apps/shoperho/shoperho/selling/page/sales_analytics/sales_analytics.js +33,Customer Group / Customer,Zákazník Group / Customer
 DocType: Item Group,Check this if you want to show in website,"Zaškrtněte, pokud chcete zobrazit v webové stránky"
-apps/shoperho/shoperho/setup/page/setup_wizard/setup_wizard.js +189,Welcome to ShoperHO,Vítejte na ShoperHO
+apps/shoperho/shoperho/setup/page/setup_wizard/setup_wizard.js +189,Welcome to ShoperPrime
+,Vítejte na ShoperHO
 DocType: Payment Reconciliation Payment,Voucher Detail Number,Voucher Detail Počet
 DocType: Lead,From Customer,Od Zákazníka
 apps/shoperho/shoperho/setup/page/setup_wizard/install_fixtures.py +37,Calls,Volá
