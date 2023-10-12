@@ -1,6 +1,5 @@
 <div align="center">
     <a href="https://shopersolutions.com">
-        <img src="https://raw.githubusercontent.com/frappe/ShoperPrime HO/develop/ShoperPrime HO/public/images/ShoperPrime HO-logo.png" height="128">
     </a>
     <h2>ShoperPrime HO</h2>
     <p align="center">
