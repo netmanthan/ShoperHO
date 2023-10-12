@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("loan_management", "doctype", "loan")
+	frappe.reload_doc("loan_mgment", "doctype", "loan")
 	loan = frappe.qb.DocType("Loan")
 
 	for company in frappe.get_all("Company", pluck="name"):

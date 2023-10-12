@@ -8,7 +8,7 @@ from frappe.utils import add_months, getdate
 
 from shoperprimeho.accounts.doctype.payment_entry.test_payment_entry import get_payment_entry
 from shoperprimeho.accounts.doctype.purchase_invoice.test_purchase_invoice import make_purchase_invoice
-from shoperprimeho.loan_management.doctype.loan.test_loan import (
+from shoperprimeho.loan_mgment.doctype.loan.test_loan import (
 	create_loan,
 	create_loan_accounts,
 	create_loan_type,

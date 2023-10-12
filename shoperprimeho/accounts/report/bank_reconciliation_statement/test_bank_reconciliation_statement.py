@@ -10,7 +10,7 @@ from shoperprimeho.accounts.doctype.bank_transaction.test_bank_transaction impor
 from shoperprimeho.accounts.report.bank_reconciliation_statement.bank_reconciliation_statement import (
 	execute,
 )
-from shoperprimeho.loan_management.doctype.loan.test_loan import create_loan_accounts
+from shoperprimeho.loan_mgment.doctype.loan.test_loan import create_loan_accounts
 
 
 class TestBankReconciliationStatement(FrappeTestCase):

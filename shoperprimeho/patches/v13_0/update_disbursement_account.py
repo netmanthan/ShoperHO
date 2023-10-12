@@ -3,8 +3,8 @@ import frappe
 
 def execute():
 
-	frappe.reload_doc("loan_management", "doctype", "loan_type")
-	frappe.reload_doc("loan_management", "doctype", "loan")
+	frappe.reload_doc("loan_mgment", "doctype", "loan_type")
+	frappe.reload_doc("loan_mgment", "doctype", "loan")
 
 	loan_type = frappe.qb.DocType("Loan Type")
 	loan = frappe.qb.DocType("Loan")
